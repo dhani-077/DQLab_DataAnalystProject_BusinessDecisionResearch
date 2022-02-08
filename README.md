@@ -8,7 +8,7 @@
 
 ## Code and Resources Used 
 **Python Version:** 3.10  
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn.
 **Data Source:** Data Analyst Career Track Course dari [DQLab](https://dqlab.id)
 
 ## Data Cleaning
@@ -20,5 +20,23 @@ Dari data retail yang telah diberikan oleh DQLab hal pertama yang dilakukan adal
 ## Exploratory Data Analysis
 Setelah melakukan Data Cleaning yang dilakukan berikutnya adalah melakukan EDA untuk bisa memvisualisasikannya. Hasil dari visualisasi inilah yang digunakan untuk membantu analisis lebih lanjut.
 
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/graph_customer_acquisition.png "Customer First Transaction")
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/grap_transaction_customer.png "Number of Transaction")
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/year_first_transaction.png "Average Transaction")
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/proportion_churn_by_product.png "Churn Proportion")
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/customer_distribution_by_count_transaction_group.png "Count Transaction Group")
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/customer_distribution_by_average_transaction_amount_group.png "Average Transaction Group")
+
 ## Model Building 
-Untuk melakukan pemodelan, disini variable yang digunakan adalah
+Untuk melakukan pemodelan, disini variable yang digunakan untuk x nya adalah "Average_Transaction_Amount", "Count_Transaction", "Year_Diff". lalu untuk variable y diambil dari kolom "is_churn". Disini dilakukan testing pemodelan dengan test size sebesar 25%.
+
+Pemodelan yang dilakukan adalah sebagai berikut:
+*	**Logistic Regression**
+*	**Confusion Matrix**
+![alt text](https://github.com/dhani-077/DQLab_DataAnalystProject_BusinessDecisionResearch/blob/main/gambar/confusion_matrix.png "Confusion Matrix")
+
+## Model performance
+Dari model yang sudah dibuat tadi dilakukuan pengecekan kualitas model tersebut dengan memunculkan akurasi, presisi, dan recall nya. Hasilnya adalah sebagai berikut:
+* **Accuracy** : 0.66668
+* **Precision** : 0.66668
+* **Recall** : 0.66668
